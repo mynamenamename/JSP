@@ -8,7 +8,9 @@
    msg = "안녕하세요~!!";
 %>
 
-
+<!-- html  주석  -->
+<%-- JSP   주석 --%>
+<%  //JAVA 주석   %>
 <!DOCTYPE html>
 <html>
 <head>

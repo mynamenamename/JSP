@@ -1,6 +1,6 @@
 @CHARSET "UTF-8";
 
-body {	background:#white; color:#black; }
+body {	background: lightgreen; color:black; }
 
 a:link {text-decoration:none; color: #646464}   /* 방문하지 않은 링크 색깔 */
 a:visited {text-decoration:none; color: #646464}  /* 방문한 링크 색깔 */
