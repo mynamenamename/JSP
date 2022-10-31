@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
-<%@ page import="member.dao2.MemberVO" %>
-<%@ page import="member.dao2.MemberDAO" %>
+<%@ page import="member.dao.MemberVO" %>
+<%@ page import="member.dao.MemberDAO" %>
     
  <% 
  //오류 나면 패키지 이름 확인해보기!!

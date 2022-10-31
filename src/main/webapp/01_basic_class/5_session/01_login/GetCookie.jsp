@@ -11,11 +11,13 @@
 <%	
 	// 1. 클라이언트로부터 Cookie를 얻어옴 
 	Cookie all[]=request.getCookies();
-
 	// 2. 얻어온 쿠키의 이름과 값을 출력
 	for(int i=0; all !=null && i<all.length;i++){
 		out.println((i+1)+"-->"+all[i].getName()+ ":" +all[i].getValue()+"<br>");
 	}
+	
+	
+	
 %>
 
 

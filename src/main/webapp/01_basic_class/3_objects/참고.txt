@@ -1,0 +1,6 @@
+HTTP ( Hyper Text Transfer Protocol) : 통신 규약, 약속
+	- 웹 브라우저와 웹 서버 간에 통신하는 규약
+	
+	- 특징 
+		1) Connectionless	연결유지 x
+		2) Stateless 		상태유지 x
