@@ -17,11 +17,7 @@
     for(int i =0; hobby != null && i<hobby.length;i++ ) {
     	h += hobby[i] + '/';   //숏 서킷 로직 사용!!
       }  
-    
-  for(String k:hobby) {
-	   System.out.println(k);
-   }
-    
+
 %>
 
 <!DOCTYPE html>

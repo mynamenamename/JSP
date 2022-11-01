@@ -1,0 +1,7 @@
+xxxx.onclick = function(){};
+
+
+xxxx.onclick = func;
+
+
+function func() {}

@@ -94,7 +94,7 @@ public class MemberDao {
       
       try{
          // 0. 연결 객체 얻어오기   
-         String url = "jdbc:oracle:thin:@127.0.0.1:1521:xe";
+         String url = "jdbc:oracle:thin:@localhost:1521:xe";
          String user = "scott";
          String pass = "tiger";
          
@@ -125,4 +125,63 @@ public class MemberDao {
          
       return flag;
    }
+   
+   
+   
+   public boolean checkLogin(String id, String pass)
+   throws Exception { 
+	     boolean result= false; 
+	   
+	   
+	      Connection con = null; // 값 초기화
+	      PreparedStatement ps = null; // 값 초기화
+	      ResultSet rs = null;
+	      
+	      try{
+	         // 0. 연결 객체 얻어오기   
+	         String url = "jdbc:oracle:thin:@localhost:1521:xe";
+	         String user = "scott";
+	         String pass1 = "tiger";
+	         
+	         con = DriverManager.getConnection(url, user, pass1);
+	         System.out.println("연결성공");
+	         
+	         // 1. sql 문장 만들기(select 문장)
+	         String sql = "SELECT * FROM MEMBERTEST WHERE id=? AND password=?";
+	         
+	         // 2. sql 전송 객체 만들기
+	          ps = con.prepareStatement(sql);
+	          ps.setString(1, id);
+	          ps.setString(2, pass);
+	            
+	            rs = ps.executeQuery();
+	         
+	         // 3. sql 전송
+	         if(rs.next()) {
+	            result = true;   //이렇게 넣기.....
+	         }
+	         
+	         // 4. 객체 닫기
+	         rs.close();
+	         ps.close();
+	         con.close();
+	         
+	      }catch( Exception ex ){
+	         throw new MemberException("아이디 패스워드 검사시 오류  : " + ex.toString() );         
+	      }
+	         
+	   
+	   
+	   
+	   return result;
+	   
+	   
+	   
+   }
+   
+   
+   
+   
+   
+   
 }

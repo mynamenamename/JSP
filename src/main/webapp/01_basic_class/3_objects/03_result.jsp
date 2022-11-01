@@ -23,7 +23,7 @@
 			-requst.getParameterValue("") 
 			-->
 			
-			이름 : <%= name %>
+			이름 : <%= name %>  <br/>
 			좋아하는 동물 : <%= choosePet %>
 </body>
 </html>

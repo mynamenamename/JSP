@@ -10,7 +10,7 @@
       System.out.println("드라이버로딩 성공");   
 	
 	// 2. 연결객체 얻어오기
-	  String url="jdbc:oracle:thin:@192.168.0.55:1521:xe";
+	  String url="jdbc:oracle:thin:@localhost:1521:xe";
       String user="scott";
       String pass="tiger";
 

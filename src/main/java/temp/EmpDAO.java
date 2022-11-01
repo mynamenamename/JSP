@@ -37,7 +37,7 @@ public class EmpDAO {
 	     
 	     
 		// 2. 연결객체 얻어오기
-		  String url="jdbc:oracle:thin:@192.168.0.56:1521:xe";
+		  String url="jdbc:oracle:thin:@localhost:1521:xe";
 	      String user="scott";
 	      String pass="tiger";
 
