@@ -8,7 +8,6 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 <script type="text/javascript" >
-
 $(function(){
 	//1.입력 버튼이 눌렸을 때
 	$('#btnInsert').click(function(){
@@ -104,9 +103,6 @@ $(function(){
 	
 	
 });
-
-
-
 </script>
 
 </head>
