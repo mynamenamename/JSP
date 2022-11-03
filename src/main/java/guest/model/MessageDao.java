@@ -126,7 +126,7 @@ public class MessageDao {
     	 
     	 while(rs.next()) {
     		 Message m = new Message();
-    		 m.setMessageId(rs.getInt("MESSAGE_ID"));
+    		 m.setMessageId(rs.getInt("MESSAGE_ID")); 
     		 m.setGuestName(rs.getString("GUEST_NAME"));
     		 m.setPassword(rs.getString("PASSWORD"));
     		 m.setMessage(rs.getString("MESSAGE"));
