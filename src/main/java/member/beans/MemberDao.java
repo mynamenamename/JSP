@@ -11,7 +11,7 @@ public class MemberDao {
    // DB 연결시  관한 변수 
 
    private static final String    dbDriver   =   "oracle.jdbc.driver.OracleDriver";
-   private static final String      dbUrl      =   "jdbc:oracle:thin:@localhost:1521:xe";
+   private static final String      dbUrl      =   "jdbc:oracle:thin:@192.168.0.56:1521:xe";
    private static final String      dbUser      =   "scott";
    private static final String      dbPass      =   "tiger";
 
@@ -50,7 +50,7 @@ public class MemberDao {
    {
       try {
          // 0. 연결 객체 얻어오기
-         String url="jdbc:oracle:thin:@localhost:1521:xe";
+         String url="jdbc:oracle:thin:@192.168.0.56:1521:xe";
          String user="scott";
          String pass="tiger";
 
@@ -94,7 +94,7 @@ public class MemberDao {
       
       try{
          // 0. 연결 객체 얻어오기   
-         String url = "jdbc:oracle:thin:@localhost:1521:xe";
+         String url = "jdbc:oracle:thin:@192.168.0.56:1521:xe";
          String user = "scott";
          String pass = "tiger";
          
@@ -139,7 +139,7 @@ public class MemberDao {
 	      
 	      try{
 	         // 0. 연결 객체 얻어오기   
-	         String url = "jdbc:oracle:thin:@localhost:1521:xe";
+	         String url = "jdbc:oracle:thin:@192.168.0.56:1521:xe";
 	         String user = "scott";
 	         String pass1 = "tiger";
 	         
